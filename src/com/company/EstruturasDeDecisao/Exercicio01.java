@@ -19,7 +19,7 @@ public class Exercicio01 {
         scanner.close();
     }
     private static boolean temMediaNasProvas(double notaDeMatematica , double notaDePortuges){
-        return notaDeMatematica >= NOTA_MINIMA_POR_MATERIA && notaDePortuges >= NOTA_MINIMA_POR_MATERIA && notaDePortuges >= 0 && notaDeMatematica >= 0;
+        return notaDeMatematica >= NOTA_MINIMA_POR_MATERIA && notaDePortuges >= NOTA_MINIMA_POR_MATERIA;
     }
     private static double notaTotalDasProvas(double notaDeMatematica , double notaDePortugues){
         return notaDeMatematica + notaDePortugues;
