@@ -11,6 +11,7 @@ public class Exercicio02 {
         }else{
             System.out.println("O numero " + numeroParaVerificar + " é negativo!");
         }
+        scanner.close();
     }
     private static boolean verificaNumero(double numeroParaVerificar){
         return numeroParaVerificar >= 0;
