@@ -18,8 +18,5 @@ public class Exercicio28 {
         double quilosDesejados = scanner.nextByte();
         System.out.println("Escolha a forma de pagamento:\n(1)-CARTAO TABAJARA\n(2)-OUTRO");
         byte formaDePagamento = scanner.nextByte();
-        if(quilosDesejados > 5){
-
-        }
     }
 }
