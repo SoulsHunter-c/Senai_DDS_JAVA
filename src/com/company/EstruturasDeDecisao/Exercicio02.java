@@ -1,7 +1,7 @@
 package com.company.EstruturasDeDecisao;
 import java.util.Scanner;
 public class Exercicio02 {
-    private static double OITENTA_POR_CENTO = 0.8;
+    private static final double OITENTA_POR_CENTO = 0.8;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,6 +15,8 @@ public class Exercicio02 {
             System.out.println("O seu salario será de: " + salarioComBonusTotal(mediaSalarial));
         }else if(recebe80PorCentoDeBonus(faturamentoRealDaEmpresa,metaDeFaturamentoAnual)){
             System.out.println("O seu salario será de: " + salarioCom80PorCentoDeBonus(mediaSalarial));
+        }else{
+            System.out.println("O seu salario será de: " + mediaSalarial);
         }
         scanner.close();
     }
