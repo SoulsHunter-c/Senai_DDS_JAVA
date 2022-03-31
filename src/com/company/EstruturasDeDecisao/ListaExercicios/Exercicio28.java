@@ -28,6 +28,7 @@ public class Exercicio28 {
                 case 1 -> totalDaCompra = quilosDesejados * FILE_MAIOR_QUE_5KG;
                 case 2 -> totalDaCompra = quilosDesejados * ALCATRA_MAIOR_QUE_5KG;
                 case 3 -> totalDaCompra = quilosDesejados * PICANHA_MAIS_QUE_5KG;
+                default -> System.out.println("Insira um digito valido");
             }
         }else if(quilosDesejados < 5){
             totalDaCompra = switch (carneEscolhida) {
