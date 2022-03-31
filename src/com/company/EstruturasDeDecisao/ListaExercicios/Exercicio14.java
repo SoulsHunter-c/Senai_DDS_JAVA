@@ -11,7 +11,15 @@ public class Exercicio14 {
         double segundaNotaParcial = scanner.nextDouble();
         double mediaDoAluno = calculaMediaDoAluno(primeiraNotaParcial,segundaNotaParcial);
         if(verificaSeNotaA(mediaDoAluno)){
-            System.out.println();
+            System.out.println("Voce passou com nota A!!");
+        }else if(verificaSeNotaB(mediaDoAluno)){
+            System.out.println("Voce passou com nota B!!");
+        }else if(verificaSeNotaC(mediaDoAluno)){
+            System.out.println("Voce foi aprovado com nota C");
+        }else if(verificaSeNotaD(mediaDoAluno)){
+            System.out.println("Voce foi reprovado, tirou nota D.");
+        }else if(verificaSeNotaE(mediaDoAluno)){
+            System.out.print("Voce foi reprovado, tirou nota E.");
         }
     }
     private static double calculaMediaDoAluno(double primeiraNotaParcial , double segundaNotaParcial){

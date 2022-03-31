@@ -20,6 +20,8 @@ public class Exercicio15 {
                 System.out.println("Triangulo Isoceles");
             }
             scanner.close();
+        }else{
+            System.out.println("Nao pode ser um triangulo");
         }
     }
     private static boolean verificaSePodeTriangulo(double primeiroLado, double segundoLado, double terceiroLado){

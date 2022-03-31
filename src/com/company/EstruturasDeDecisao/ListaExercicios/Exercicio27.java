@@ -42,12 +42,15 @@ public class Exercicio27 {
     private static boolean morangosMaiorQue5(byte numeroDeMorangos){
         return numeroDeMorangos > 5;
     }
+
     private static boolean macasMaiorQue5(byte numeroDeMacas){
         return numeroDeMacas > 5;
     }
+
     private static boolean quantidadeDeFrutasMaiorQue8(byte numeroDeMacas , byte numeroDeMorangos){
         return numeroDeMacas + numeroDeMorangos >= QUILOS_PARA_RECEBER_DESCONTO;
     }
+
     private static boolean verificaSeRecebeDesconto(double precoDosMorangos , double precoDasMacas , byte numeroDeMorangos , byte numeroDeMacas){
         return precoDasMacas + precoDosMorangos > PRECO_PARA_RECEBER_DESCONTO && quantidadeDeFrutasMaiorQue8(numeroDeMorangos , numeroDeMacas);
     }
