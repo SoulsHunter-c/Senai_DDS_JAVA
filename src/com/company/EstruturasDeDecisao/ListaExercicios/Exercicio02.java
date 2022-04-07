@@ -1,19 +1,22 @@
 package com.company.EstruturasDeDecisao.ListaExercicios;
+
 import java.util.Scanner;
+
 public class Exercicio02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Insira o numero que deseja verificar: ");
-        double numeroParaVerificar  = scanner.nextDouble();
-        if(verificaNumero(numeroParaVerificar)){
+        double numeroParaVerificar = scanner.nextDouble();
+        if (verificaSePositivo(numeroParaVerificar)) {
             System.out.println("O numero " + numeroParaVerificar + " é positivo!");
-        }else{
+        } else {
             System.out.println("O numero " + numeroParaVerificar + " é negativo!");
         }
         scanner.close();
     }
-    private static boolean verificaNumero(double numeroParaVerificar){
+
+    private static boolean verificaSePositivo(double numeroParaVerificar) {
         return numeroParaVerificar >= 0;
     }
 }

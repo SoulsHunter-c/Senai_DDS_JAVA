@@ -6,9 +6,11 @@ public class Exercicio03 {
 
         System.out.print("Insira a letra referente ao seu sexo:\nF - Feminino\nM - Masculino");
         char sexoInformado = scanner.next().charAt(0);
-        if(sexoInformado == 'm'|| sexoInformado == 'M'){
+        boolean sexoMasculino = sexoInformado == 'm'|| sexoInformado == 'M';
+        boolean sexoFeminino = sexoInformado =='F' || sexoInformado=='f';
+        if(sexoMasculino){
             System.out.println("O sexo informado foi masculino!");
-        }else if(sexoInformado =='F' || sexoInformado=='f'){
+        }else if(sexoFeminino){
             System.out.println("O sexo informado é feminino!");
         }else{
             System.out.println("Insira um sexo valido!");
