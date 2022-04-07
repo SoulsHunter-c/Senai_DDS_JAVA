@@ -14,6 +14,8 @@ public class Exercicio3 {
             case 5 -> System.out.println("O dia informado é quinta!!");
             case 6 -> System.out.println("O dia informado é sexta!!");
             case 7 -> System.out.println("O dia informado é sabado!!");
+            default -> System.out.println("O numero informado não é valido!!");
         }
+        scanner.close();
     }
 }
