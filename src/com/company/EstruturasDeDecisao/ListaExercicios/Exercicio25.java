@@ -28,6 +28,7 @@ public class Exercicio25 {
         }else{
             System.out.println("Obrigado por responder, devido as respostas voce foi classificado como:\nINOCENTE");
         }
+        System.out.println(teste);
     }
     private static int verificaPontosDeSuspeita(int telefonouParaVitima , int esteveNoLocalDoCrime , int moraPertoDaVitima , int deviaParavitima , int jaTrabalhoComVitima){
         return telefonouParaVitima + esteveNoLocalDoCrime + moraPertoDaVitima + deviaParavitima + jaTrabalhoComVitima;
