@@ -28,7 +28,7 @@ public class Exercicio01 {
         System.out.println("Insira a operação desejada:\n[1]-SOMA\n[2]-SUBTRAÇÃO\n[3]-DIVISÃO\n[4]-MULTIPLICAÇÃO");
         operacaoSelecionada = scanner.nextInt();
         while(operacaoSelecionada > 4){
-            System.out.println("Escolha uma operação valida: ");
+            System.err.println("Escolha uma operação valida: ");
             operacaoSelecionada = scanner.nextInt();
         }
     }
