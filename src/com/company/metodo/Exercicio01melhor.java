@@ -7,6 +7,7 @@ public class Exercicio01melhor {
         Scanner scanner = new Scanner(System.in);
         Double multiplicando = recebeMultiplicando(scanner);
         realizaTabuadaDoMultiplicando(multiplicando,i);
+        scanner.close();
 
     }
     static void realizaTabuadaDoMultiplicando(Double multiplicando, Integer i){
