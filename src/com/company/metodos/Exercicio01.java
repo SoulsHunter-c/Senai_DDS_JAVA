@@ -1,4 +1,4 @@
-package com.company.metodo;
+package com.company.metodos;
 import java.util.Scanner;
 /*
 Crie um programa que peça dois números do usuário e também qual a operação ele deseja fazer - adição ou subtração.

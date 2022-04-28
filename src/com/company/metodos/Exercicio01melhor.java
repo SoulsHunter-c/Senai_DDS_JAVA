@@ -1,4 +1,4 @@
-package com.company.metodo;
+package com.company.metodos;
 import java.util.Scanner;
 
 public class Exercicio01melhor {
