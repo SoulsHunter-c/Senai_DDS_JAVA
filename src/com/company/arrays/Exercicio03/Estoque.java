@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos_parte1.Exercicio03;
+package com.company.arrays.Exercicio03;
 public class Estoque {
     Produto[] produtos;
     private int quantidadeTotal;

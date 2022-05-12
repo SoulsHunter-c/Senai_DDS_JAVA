@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos_parte1.Exercicio03;
+package com.company.arrays.Exercicio03;
 import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
@@ -10,8 +10,8 @@ public class Principal {
         estoque.produtos = new Produto[quantosProdutosDeseja];
         for (int i = 0; i < estoque.produtos.length; i++) {
             estoque.produtos[i] = new Produto();
-            System.out.println("Produto"+i);
-            System.out.println("------------------------");
+            System.out.println("***********\nProduto"+i);
+            System.out.println("***********");
             System.out.println("Descrição:");
             estoque.produtos[i].descricao=scanner.next();
             scanner.nextLine();
