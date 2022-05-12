@@ -4,10 +4,10 @@ public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Quantidade de produtos pra quarda no estoque: ");
-        int quantidadeProdutos = scanner.nextInt();
+        int quantosProdutosDeseja = scanner.nextInt();
         scanner.nextLine();
         Estoque estoque = new Estoque();
-        estoque.produtos = new Produto[quantidadeProdutos];
+        estoque.produtos = new Produto[quantosProdutosDeseja];
         for (int i = 0; i < estoque.produtos.length; i++) {
             estoque.produtos[i] = new Produto();
             System.out.println("Produto"+i);

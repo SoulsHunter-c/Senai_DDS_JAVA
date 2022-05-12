@@ -6,12 +6,12 @@ public class Estoque {
     void listarProdutos(){
         System.out.println("Produtos em estoque\n---------------------------");
         for (int i = 0; i < produtos.length; i++){
-            produtos[i].dsecrever();
+            produtos[i].dsecreverProdutos();
         }
     }
     void quantidadeTotalDeProdutosEmEstoque(){
         for(int i = 0; i < produtos.length; i++){
-            this.quantidadeTotal += produtos[i].quantidade;
+            quantidadeTotal += produtos[i].quantidade;
         }
         System.out.println("Quantidade Total de produtos no estoque: " + quantidadeTotal);
     }

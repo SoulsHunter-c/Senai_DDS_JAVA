@@ -4,7 +4,7 @@ public class Produto {
     Double preco;
     int quantidade;
 
-    void dsecrever(){
-        System.out.println("Descrição: " + descricao + "    Quantidade: " + quantidade + "    Prço: " + preco);
+    void dsecreverProdutos(){
+        System.out.println("Descrição: " + descricao + "    Quantidade: " + quantidade + "    Preço: " + preco);
     }
 }
