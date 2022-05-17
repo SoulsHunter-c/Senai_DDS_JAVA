@@ -4,6 +4,11 @@ public class ContaPagar {
     private Double valor;
     private String dataVencimento;
     private Fornecedor fornecedor;
+    private SituacaoConta situacaoConta;
+
+    public SituacaoConta getSituacaoConta() {
+        return situacaoConta;
+    }
 
     public Fornecedor getFornecedor() {
         return fornecedor;
@@ -14,13 +19,14 @@ public class ContaPagar {
     }
 
     public ContaPagar(){
-
+        situacaoConta = SituacaoConta.PENDENTE;
     }
-    public ContaPagar(Fornecedor fornecedor,String descricao, Double valor, String dataVencimento){
+    public ContaPagar(Fornecedor fornecedor,String descricao, Double valor, String dataVencimento,SituacaoConta situacaoConta){
         this.fornecedor = fornecedor;
         this.descricao = descricao;
         this.dataVencimento = dataVencimento;
         this.valor = valor;
+        this.situacaoConta = situacaoConta;
     }
     public String getDescricao() {
         return descricao;
@@ -47,7 +53,23 @@ public class ContaPagar {
     }
 
     void pagar(){
-        System.out.println("DESCRICAO: " + getDescricao() + "\n" + "VALOR: " + getValor() + "\n" + "DATA DE VENCIMENTO: " + getDataVencimento() + "\n" + "FORNECEDOR: " + getFornecedor().nome);
+        if(situacaoConta == SituacaoConta.PENDENTE){
+            System.out.println("DESCRICAO: " + getDescricao() + "\n" + "VALOR: " + getValor() + "\n" + "DATA DE VENCIMENTO: " + getDataVencimento() + "\n" + "FORNECEDOR: " + getFornecedor().nome + "\n" +
+                    "SITUAÇÃO: " + situacaoConta);
+            situacaoConta = SituacaoConta.PAGA;
+        }
+        else{
+            System.err.println("A conta " + descricao + " está: " + situacaoConta);
+        }
     }
 
+    public void cancelar() {
+        if(situacaoConta == SituacaoConta.PENDENTE){
+            System.out.println("A conta foi cancelada.");
+            situacaoConta = SituacaoConta.CANCELADA;
+        }
+        else{
+            System.err.println("A conta "+ descricao+" nao pode ser cancelada.");
+        }
+    }
 }
