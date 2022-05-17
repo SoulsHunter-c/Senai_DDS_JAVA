@@ -1,4 +1,4 @@
-package com.company.modificadores_static_e_final;
+package com.company.orientacao_a_objetos_parte2.modificadores_static_e_final;
 public class Contador {
     public static int COUNT = 0;
     public static final double PI = 3.14;
