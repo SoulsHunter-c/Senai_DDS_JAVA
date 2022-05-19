@@ -65,7 +65,7 @@ public class ContaPagar {
 
     public void cancelar() {
         if(situacaoConta == SituacaoConta.PENDENTE){
-            System.out.println("A conta foi cancelada.");
+            System.out.println("A conta "+ descricao +" foi cancelada.");
             situacaoConta = SituacaoConta.CANCELADA;
         }
         else{
