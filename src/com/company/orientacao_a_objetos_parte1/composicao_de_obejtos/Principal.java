@@ -7,8 +7,5 @@ public class Principal {
         meuCarro.cor = "Prata";
         meuCarro.fabricante = "Fiat";
         meuCarro.modelo = "Palio";
-        meuCarro.dono = new Proprietario();
-        meuCarro.dono.nome = "João";
-        meuCarro.dono.bairro = "Centro";
     }
 }
