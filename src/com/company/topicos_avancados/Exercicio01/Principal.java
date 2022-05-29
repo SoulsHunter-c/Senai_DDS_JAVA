@@ -12,28 +12,26 @@ Se levar esse desafio a sério, jogar na Mega-Sena e ganhar, não esqueça de n�
 import java.lang.Math;
 import java.util.Scanner;
 public class Principal {
+    private static int QUANTIDADE_DE_NUMEROS_POR_JOGO = 6;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Insira quantos jogos deseja realizar: ");
-        int jogosQueDesejaRealizar = scanner.nextInt();
-        while(jogosQueDesejaRealizar > 5){
-            System.out.println("Maximo de jogos é 5, deseja jogar quantas vezes? ");
-            jogosQueDesejaRealizar = scanner.nextInt();
-        }
-        double[][] numeroDejogos = new double[jogosQueDesejaRealizar][6];
-        for(int i=0; i < jogosQueDesejaRealizar; i++){
-            for(int y=0; y<6; y++){
-                double numeroParaJogar = Math.random() * 60;
+        int jogosQueDesejaRealizar = perguntaQuantosJogos(scanner);
+        double[][] numeroDejogos = new double[jogosQueDesejaRealizar][QUANTIDADE_DE_NUMEROS_POR_JOGO];
+        for(int i = 0 ; i < jogosQueDesejaRealizar; i++){
+            for(int y = 0; y < QUANTIDADE_DE_NUMEROS_POR_JOGO; y++){
+                double numeroParaJogar = Math.random() * 100;
                 numeroParaJogar = Math.ceil(numeroParaJogar);
                 while(numeroParaJogar < 1 || numeroParaJogar >= 60){
-                    numeroParaJogar = Math.random();
+                    numeroParaJogar = Math.random() * 100;
+                    numeroParaJogar = Math.ceil(numeroParaJogar);
                 }
                 if(numeroParaJogar == numeroDejogos[i][y]){
                     while(numeroParaJogar == numeroDejogos[i][y]){
-                        numeroParaJogar = Math.random();
+                        numeroParaJogar = Math.random() * 100;
                         numeroParaJogar = Math.ceil(numeroParaJogar);
                         while(numeroParaJogar < 1 || numeroParaJogar >= 60){
-                            numeroParaJogar = Math.random();
+                            numeroParaJogar = Math.random() * 100;
+                            numeroParaJogar = Math.ceil(numeroParaJogar);
                         }
                     }
                 }
@@ -47,5 +45,9 @@ public class Principal {
             }
             System.out.println("--------------------------------------");
         }
+    }
+    private static int perguntaQuantosJogos(Scanner scanner){
+        System.out.println("Quantos jogos deseja realizar? ");
+        return scanner.nextInt();
     }
 }
