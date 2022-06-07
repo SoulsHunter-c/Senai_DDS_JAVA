@@ -19,7 +19,7 @@ public class Principal {
         DecimalFormat formatador = new DecimalFormat("R$ #,##0.00");
         System.out.print("Insira o valor desejado: ");
         valorDesejado = scanner.nextBigDecimal();
-        valorDesejado = valorDesejado.divide(BigDecimal.TEN);;
+        valorDesejado = valorDesejado.divide(BigDecimal.TEN);
         System.out.println("Valor de 10%:\n " + formatador.format(valorDesejado));
 
     }
