@@ -8,7 +8,7 @@ public class TesteSetHashSet2 {
 
         //de alguma forma, sorteia o nome do aluno e constroi o objeto Aluno
 
-        Aluno alunoSorteado = new Aluno("Maria");
+        Aluno alunoSorteado = new Aluno("Maria  ");
 
         if(alunos.contains(alunoSorteado)){
             System.out.println("Parabens " + alunoSorteado.getNome() + "! Voce ganhou um brinde!");
