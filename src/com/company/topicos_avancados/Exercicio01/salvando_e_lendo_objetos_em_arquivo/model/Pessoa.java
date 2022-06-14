@@ -11,7 +11,6 @@ public class Pessoa  implements Serializable {
     private String profissao;
 
 
-
     public static long getSerialVersionHUD() {
         return serialVersionHUD;
     }
