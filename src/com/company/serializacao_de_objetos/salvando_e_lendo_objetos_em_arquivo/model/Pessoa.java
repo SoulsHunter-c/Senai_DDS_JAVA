@@ -1,4 +1,4 @@
-package com.company.topicos_avancados.Exercicio01.salvando_e_lendo_objetos_em_arquivo.model;
+package com.company.serializacao_de_objetos.salvando_e_lendo_objetos_em_arquivo.model;
 
 import java.io.Serializable;
 

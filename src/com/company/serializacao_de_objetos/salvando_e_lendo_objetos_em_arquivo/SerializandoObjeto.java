@@ -1,6 +1,6 @@
-package com.company.topicos_avancados.Exercicio01.salvando_e_lendo_objetos_em_arquivo;
+package com.company.serializacao_de_objetos.salvando_e_lendo_objetos_em_arquivo;
 
-import com.company.topicos_avancados.Exercicio01.salvando_e_lendo_objetos_em_arquivo.model.Pessoa;
+import com.company.serializacao_de_objetos.salvando_e_lendo_objetos_em_arquivo.model.Pessoa;
 
 import java.io.*;
 

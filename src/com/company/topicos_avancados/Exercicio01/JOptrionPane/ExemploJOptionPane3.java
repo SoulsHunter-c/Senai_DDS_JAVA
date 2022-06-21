@@ -8,7 +8,8 @@ public class ExemploJOptionPane3 {
 
         Object[] opcoes = {"Sim", "Nao", "Sim, com e-mail"};
 
-        int opcao = JOptionPane.showOptionDialog(null,"Voce gostario de finalizar o cadastro?", "Confirmação",JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,opcoes,opcoes[2]);
+        int opcao = JOptionPane.showOptionDialog(null,"Voce gostario de finalizar o cadastro?",
+                "Confirmação",JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,opcoes,opcoes[2]);
 
         System.out.println("Opcao selecionada: " + opcao);
 
