@@ -1,4 +1,4 @@
-package com.company.switch_case_com_string;
+package com.company.novidades_do_java_separador_de_digito_em_literais_numericos.switch_case_com_string;
 
 public class SwitchCaseComString {
 
